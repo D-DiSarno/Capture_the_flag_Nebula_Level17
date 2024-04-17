@@ -33,4 +33,14 @@ Il codice sorgente relativo alla vulnerabilità può essere trovato nel file `So
    cat /home/flag17/output
 ## Mitigazione
 ## Accesso in modalità SSH
-   
+Per accedere alla macchina Nebula in modalità SSH, segui i passaggi descritti di seguito:
+
+1. Accedi a Nebula: Utilizza le credenziali fornite per accedere alla macchina virtuale Nebula.
+2. Ottieni l'indirizzo IP: Una volta effettuato l'accesso, digita il comando
+```bash
+ip add
+3. Apri il prompt dei comandi sul tuo sistema.
+4. Una volta aperto il prompt dei comandi digita il seguente comando, sostituendo <indirizzo_ip> con l'indirizzo IP ottenuto al passaggio 2
+```bash
+ssh level17@<indirizzo_ip>
+Sarai quindi invitato a inserire la password associata all'account level17. Una volta inserita correttamente, verrai autenticato ed avrai accesso al sistema tramite SSH.
