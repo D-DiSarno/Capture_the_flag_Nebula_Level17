@@ -32,6 +32,16 @@ Il codice sorgente relativo alla vulnerabilità può essere trovato nel file `So
    ```bash
    cat /home/flag17/output
 ## Mitigazione
+I passaggi di mitigazione implicano due strategie: l'uso sicuro di JSON e l'eliminazione dei privilegi.
+1. Passa alla modalità root con i seguenti comandi:
+   ```bash
+   su -nebula
+   sudo -i
+   ```
+   La password per questi comandi è nebula.
+2. Posiziona il file `flag17_json.py` in `/home/flag17/` per sostituire lo script vulnerabile con uno non vulnerabile, l’attacco utilizza lo script `exploit_json`.
+3. Per abbandonare i privilegi e aumentare ulteriormente la sicurezza dello script(seconda mitigazione), inserisci `flag17_drop.py`.
+
 
 ## Accesso in modalità SSH
 
